@@ -21,3 +21,5 @@ else
   echo "!!!!!!!!!!!!!!!!!!!!변화가 없다"
   exit 1
 fi
+
+./auto-commit-push.sh
