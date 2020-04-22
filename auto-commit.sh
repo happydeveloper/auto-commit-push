@@ -1,8 +1,11 @@
 #!/bin/zsh
 
+install_chk=$(which watch)
 #Check the shell
-if [ -z "$BASH_VERSION" ]; then
-    echo -e "Error: this script requires the BASH shell!"
+if [[ "$install_chk" = *"not found"* ]]; then
+    brew install watch
     exit 1
 fi
-./auto-commit-push.sh 
+
+watch -n 2 ./auto-commit-push.sh
+
