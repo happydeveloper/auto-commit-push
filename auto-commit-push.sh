@@ -1,4 +1,6 @@
 #!/bin/zsh
+# git config --global alias.auto-commit-push '!auto-commit-push.sh' 
+# brew install watch
 
 echo "-- auto commit push ---"
 echo "1 시간에 한번씩 자동으로 커밋하고 푸시함 "
