@@ -16,3 +16,4 @@ else
   watch -n $1 ./auto-commit-push.sh
 fi
 
+echo "$1 초마다 변경된 파일 자동 커밋과 푸시"
