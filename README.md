@@ -4,13 +4,18 @@
 
 
 ## 특징
-- 현재 맥에서만 지원해주세요.
+- macOS에서만 지원.
+
+## 설치
+```
+git clone 
+chmod +x install.sh auto-commit.sh auto-commit-push.sh
+source ./auto-commit.sh
+```
 
 ## 사용법
-
-간단한 문법 구조:
-
 ```
+git init # git 레파지토리 안에서 실행
 #3 분마다 파일 변경사항 체크하여 커밋후 푸시 
 $ auto-commit 3 
 ```
