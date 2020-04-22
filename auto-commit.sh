@@ -8,8 +8,9 @@ if [[ "$install_chk" = *"not found"* ]]; then
     exit 1
 fi
 
-if [ $# -ne 1]; then
-  echo "Usage: $0 60 //60초마다 파일 체크후 보내기"
+if [ $# -ne 1 ]; then
+  echo "파라미터가 필요합니다. "
+  echo "Usage: $0 60 #60초마다 파일 체크후 보내기"
   exit -1
 else
   watch -n $1 ./auto-commit-push.sh
