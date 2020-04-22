@@ -10,9 +10,9 @@ stt=$(git status)
 m="$(git status --short)"
 msg_date=$(date)
 git status
-
+git add .
 echo "$?"
-if [[ "$stt" = *"수정함:"* ]]; then
+if [[ "$stt" = *"수정함:"* ]] || [[ "$stt" = *"새 파일:"* ]]; then
   echo "********************변화가 있다"
   git add .
   git commit -am "$m - $msg_date "
