@@ -6,12 +6,13 @@ echo "변화가 없으면 커밋하지 않음"
 stt=$(git status)
 m="$(git status --short)"
 msg_date=$(date)
+commit_msg="$(git diff)"
+if [[ "$msg" = *"#cmsg"* ]]; then
 commit_msg="$(git diff | grep "#cmsg")"
+fi
 
-#cmsg cmsg 필터링 테스트
 git status
 git add .
-echo "$?"
 if [[ "$stt" = *"수정함:"* ]] || [[ "$stt" = *"새 파일:"* ]] || [[ "$stt" = *"삭제함:"* ]]; then
   echo "********************변화가 있다********************"
   git add .
