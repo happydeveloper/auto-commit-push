@@ -20,4 +20,5 @@ $ source ./auto-commit.sh
 $ git init # git 레파지토리 안에서 실행
 #3 분마다 파일 변경사항 체크하여 커밋후 푸시 
 $ auto-commit 3 
+$ echo "#cmsg 커밋 메시지 줄 출력" >> test.txt
 ```
