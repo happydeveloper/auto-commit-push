@@ -8,7 +8,7 @@ m="$(git status --short)"
 msg_date=$(date)
 commit_msg="$(git diff | grep "#cmsg")"
 
-#cmsg 특정단어 뒤에 30글자는 커밋메시지가 있으면 표시
+#cmsg cmsg 필터링 테스트
 git status
 git add .
 echo "$?"
