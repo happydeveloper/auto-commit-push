@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 install_chk=$(which watch)
-#Check the shell
+#cmsg 설치파일 검증 주석 추가
 if [[ "$install_chk" = *"not found"* ]]; then
     brew install watch
     source ./auto-commit.sh
