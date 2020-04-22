@@ -1,6 +1,4 @@
 #!/bin/zsh
-# git config --global alias.auto-commit-push '!auto-commit-push.sh' 
-# brew install watch
 
 echo "-- auto commit push ---"
 echo "변화가 없으면 커밋하지 않음"
@@ -20,6 +18,5 @@ if [[ "$stt" = *"수정함:"* ]] || [[ "$stt" = *"새 파일:"* ]] || [[ "$stt" 
   echo "*******************************"
 else 
   echo "!!!!!!!!!!!!!!!!!!!!변화가 없다"
-  #exit 1
 fi
 
