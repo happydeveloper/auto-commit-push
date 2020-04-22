@@ -8,7 +8,7 @@ m="$(git status --short)"
 msg_date=$(date)
 commit_msg="$(git diff)"
 if [[ "$msg" = *"#cmsg"* ]]; then
-commit_msg="$(git diff | grep "#cmsg")"
+  commit_msg="$(git diff | grep "#cmsg")"
 fi
 
 git status
