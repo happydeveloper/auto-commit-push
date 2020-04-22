@@ -8,7 +8,7 @@ m="$(git status --short)"
 msg_date=$(date)
 commit_msg="$(git diff)"
 if [[ "$msg" = *"#cmsg"* ]]; then #cmsg 태그가 있으면 메시지를 grep해서 출력해줌
-  commit_msg="$(git diff | grep "#cmsg")" #
+  commit_msg="$(git diff | grep "#cmsg")"
 fi
 
 git status
