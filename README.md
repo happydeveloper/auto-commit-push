@@ -9,6 +9,5 @@
 
 ```
 #3 분마다 파일 변경사항 체크하여 커밋후 푸시 
-./auto-commit.sh 3 
-
+$ auto-commit 3 
 ```
