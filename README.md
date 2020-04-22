@@ -5,12 +5,14 @@
 ## 특징
 - macOS에서만 지원.
 
+
 ## 설치
 ```
 $ git clone 
 $ chmod +x install.sh auto-commit.sh auto-commit-push.sh
 $ source ./auto-commit.sh
 ```
+
 
 ## 사용법
 ```
