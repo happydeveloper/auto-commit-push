@@ -3,7 +3,6 @@
 # brew install watch
 
 echo "-- auto commit push ---"
-echo "1 시간에 한번씩 자동으로 커밋하고 푸시함 "
 echo "변화가 없으면 커밋하지 않음"
 
 stt=$(git status)
