@@ -47,15 +47,15 @@ if [ -f "./auto-commit.sh" ]; then
 else
     DU=$(which auto-commit.sh)
     if [ $? -ne 0 ]; then
-        echo "auto-commit Uploader not found!"
+        echo "auto-commit not found!"
         exit 1
     fi
 fi
 
-#Check DropBox Uploader
+#Check auto-commitr
 if [ ! -f "$DU" ]; then
-    echo "Dropbox Uploader not found: $DU"
-    echo "Please change the 'DU' variable according to the Dropbox Uploader location."
+    echo "auto commit not found: $DU"
+    echo "Please change the 'DU' variable according to the auto location."
     exit 1
 else
     DU=$($READLINK -m "$DU")
