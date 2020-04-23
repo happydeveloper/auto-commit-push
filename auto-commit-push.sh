@@ -14,7 +14,6 @@ fi
 git checkout -b logs #logs 브랜치 이동
 branch=$(cat .git/HEAD)
 
-
 git status
 git add .
 if [[ "$stt" = *"수정함:"* ]] || [[ "$stt" = *"새 파일:"* ]] || [[ "$stt" = *"삭제함:"* ]]; then
@@ -22,6 +21,9 @@ if [[ "$stt" = *"수정함:"* ]] || [[ "$stt" = *"새 파일:"* ]] || [[ "$stt" 
   git add .
   git commit -am "$m - $commit_msg - $msg_date "
   git push origin ${branch#*ref: refs/heads/}
+  # 정시마다 마스터에 logs 브랜츠를 머지하고 
+  # 여러개 커밋메시지를 하나로 합친다.
+  # 하나로 합치면 태깅을 한다.
   echo "$0"
   echo "*************************************************"
 else 
