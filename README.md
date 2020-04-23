@@ -26,5 +26,5 @@ $ echo "#cmsg 커밋 메시지 줄 출력" >> test.txt
 
 
 ## 라이선스
-LGPL3(Lesser General Public License)
-(컨설팅이나 커스터마이징이 필요하다면 연락주세요. enfn2001@gmail.com)
+- LGPL3(Lesser General Public License)
+- (컨설팅이나 커스터마이징이 필요하다면 연락주세요. enfn2001@gmail.com)
