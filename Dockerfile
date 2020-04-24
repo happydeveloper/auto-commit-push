@@ -10,3 +10,7 @@ RUN apt-get upgrade -y
 
 # container에 git 설치
 RUN apt-get install git -y
+
+# app 디렉토리 선정
+RUN mkdir /opt/app
+RUN git clone [Repository 주소 ex)https://github.com/aaa/bbb.git] /opt/app
