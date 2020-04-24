@@ -13,4 +13,4 @@ RUN apt-get install git -y
 
 # app 디렉토리 선정
 RUN mkdir /opt/app
-RUN git clone [Repository 주소 ex)https://github.com/aaa/bbb.git] /opt/app
+RUN git clone git@github.com:happydeveloper/auto-commit-push.git /opt/app
