@@ -11,7 +11,7 @@
 
 ## 설치
 ```
-$ git clone 
+$ git clone git@github.com:happydeveloper/auto-commit-push.git
 $ chmod +x install.sh auto-commit.sh auto-commit-push.sh
 $ source ./auto-commit.sh
 ```
