@@ -3,8 +3,7 @@ LABEL version='1.0.0'
  
 USER root
  
-# sources.list 교체 후 적용
-COPY sources.list /etc/apt/sources.list
+
 RUN apt-get update
 RUN apt-get upgrade -y
 
@@ -13,4 +12,5 @@ RUN apt-get install git -y
 
 # app 디렉토리 선정
 RUN mkdir /opt/app
-RUN git clone git@github.com:happydeveloper/auto-commit-push.git /opt/app
+
+#RUN git clone git@github.com:happydeveloper/auto-commit-push.git /opt/app
